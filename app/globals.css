@@ -4,6 +4,9 @@
 @theme {
   --font-outfit: "Outfit", sans-serif;
   --color-primary: #eb224d;
+  --color-gray: #535353;
+  --header-height: 100px;
+  --mobile-header-height: 72px;
 }
 
 @utility container {
@@ -12,7 +15,7 @@
 }
 
 .menu {
-  @apply bg-[rgba(0,0,0,0.6)] backdrop-blur-[50px] p-2 border border-[#535353] rounded-full;
+  @apply bg-[rgba(0,0,0,0.6)] backdrop-blur-[50px] p-2 border border-gray rounded-full;
 }
 
 .menu > ul {
@@ -30,4 +33,24 @@
 
 .a2p-button {
   @apply flex items-center justify-between gap-4 w-max text-center bg-primary rounded-full px-8 py-2;
+}
+
+.logos-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.logo-item {
+  @apply bg-[#E4E4E4] w-[178px] h-full flex items-center justify-center border rounded-3xl border-gray p-2;
+}
+
+.logo-item img {
+  @apply w-full h-full object-contain max-w-[100px];
+}
+
+.section-title {
+  @apply text-3xl mb-14;
+}
+
+header {
+  @apply h-[var(--header-height)] flex items-center fixed top-0 w-full z-20;
 }

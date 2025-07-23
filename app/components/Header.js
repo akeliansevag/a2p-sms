@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-        <div className='container flex justify-between items-center gap-5 my-10'>
+        <div className='container flex justify-between items-center gap-5'>
             <div>
                 <svg width="47" height="28" viewBox="0 0 47 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.8747 21.3771C12.8747 24.9179 10.1078 27.7944 6.68372 27.7944C3.25968 27.7944 0.5 24.9252 0.5 21.3771C0.5 17.8289 3.26698 14.9597 6.69102 14.9597C10.1151 14.9597 12.882 17.8362 12.882 21.3771" fill="#EB224D"/>

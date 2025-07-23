@@ -2,11 +2,11 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <section className='max-lg:py-10 lg:py-24'>
-        <div className='container max-lg:flex-col flex justify-between max-lg:gap-10 lg:gap-20'>
+    <section className='relative flex items-center'>
+        <div className='container max-lg:flex-col items-center flex justify-between max-lg:gap-10 lg:gap-20'>
             <div className='w-full'>
-                <div className='flex flex-col gap-5 lg:translate-y-24'>
-                    <h1 className='xl:text-6xl font-semibold text-balance'>Deliver Messages at Scale with Monty’s A2P SMS</h1>
+                <div className='flex flex-col gap-5'>
+                    <h1 className='text-6xl font-semibold text-balance'>Deliver Messages at Scale with Monty’s A2P SMS</h1>
                     <p className='text-balance'>Power mission-critical communications with direct operator access, high-speed delivery, and full global coverage.</p>
                     <a className='a2p-button mt-10' href='#'>
                         <span>Contact Us</span>
@@ -16,8 +16,10 @@ const Banner = () => {
                     </a>
                 </div>
             </div>
-            <div className='w-full flex justify-end'>
-                <img src='/phone-planet.webp' className='lg:w-[600px]' alt="Phone Planet" width={1262} height={1280}/>
+            <div className='w-full flex justify-end lg:translate-y-10'>
+                <object type="image/svg+xml" data="/messages.svg">
+                    Your browser does not support SVG
+                </object>
             </div>
         </div>
     </section>
