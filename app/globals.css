@@ -27,3 +27,7 @@
 .menu > ul > li a:hover {
   @apply border border-[rgb(114,28,52)] bg-[rgba(33,33,33,1)] rounded-full max-xl:px-3 px-5 py-1;
 }
+
+.a2p-button {
+  @apply flex items-center justify-between gap-4 w-max text-center bg-primary rounded-full px-8 py-2;
+}
