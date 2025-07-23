@@ -54,3 +54,7 @@
 header {
   @apply h-[var(--header-height)] flex items-center fixed top-0 w-full z-20;
 }
+
+.glance-box {
+  @apply border border-gray rounded-2xl bg-[#0E0E0E80] p-5 backdrop-blur-[40px] text-center flex flex-col items-center justify-center;
+}
