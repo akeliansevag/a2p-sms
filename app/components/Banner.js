@@ -6,7 +6,7 @@ const Banner = () => {
         <div className='container max-lg:flex-col items-center flex justify-between max-lg:gap-10 lg:gap-20'>
             <div className='w-full'>
                 <div className='flex flex-col gap-5'>
-                    <h1 className='text-6xl font-semibold text-balance'>Deliver Messages at Scale with Monty’s A2P SMS</h1>
+                    <h1 className='max-lg:text-2xl lg:text-6xl font-semibold text-balance'>Deliver Messages at Scale with Monty’s A2P SMS</h1>
                     <p className='text-balance'>Power mission-critical communications with direct operator access, high-speed delivery, and full global coverage.</p>
                     <a className='a2p-button mt-10' href='#'>
                         <span>Contact Us</span>
