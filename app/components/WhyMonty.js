@@ -45,7 +45,7 @@ const WhyMonty = () => {
       </div>
 
       <div className='container max-w-[1200px] mt-16'>
-        <div className='flex max-lg:flex-col gap-10'>
+        <div className='flex max-lg:flex-col-reverse gap-10'>
 
           {/* Left: Square Image Slider */}
           <div className='w-full aspect-square rounded-2xl overflow-hidden'>
@@ -77,16 +77,16 @@ const WhyMonty = () => {
               <div
                 key={index}
                 onClick={() => mainSwiperRef.current?.slideToLoop(index)}
-                className={`flex gap-4 items-start cursor-pointer p-4 rounded-lg transition-colors duration-300 ease-in-out ${
+                className={`flex max-lg:flex-col gap-5 items-start cursor-pointer p-4 rounded-lg transition-colors duration-300 ease-in-out ${
                   index === activeIndex
-                    ? 'bg-gray-200 border-l-4 border-primary'
-                    : 'hover:bg-gray-100'
+                    ? 'bg-[linear-gradient(180deg,_rgba(0,0,0,0.3)_0%,_rgba(156,156,156,0.3)_204.84%)]'
+                    : 'hover:bg-[linear-gradient(180deg,_rgba(0,0,0,0.3)_0%,_rgba(156,156,156,0.3)_204.84%)]'
                 }`}
               >
-                <img src={item.icon} alt={item.title} className='w-8 h-8 mt-1' />
+                <img src={item.icon} alt={item.title} className='red-box' />
                 <div>
-                  <h3 className='text-lg font-semibold'>{item.title}</h3>
-                  <p className='text-sm text-gray-600'>{item.description}</p>
+                  <h3 className='text-3xl font-semibold'>{item.title}</h3>
+                  <p className='text-white mt-2'>{item.description}</p>
                 </div>
               </div>
             ))}

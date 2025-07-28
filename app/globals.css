@@ -52,7 +52,7 @@ body {
 }
 
 .section-title {
-  @apply text-3xl mb-14;
+  @apply text-[42px] max-lg:text-4xl mb-14;
 }
 
 header {
@@ -61,4 +61,12 @@ header {
 
 .glance-box {
   @apply border border-gray rounded-2xl bg-[#0E0E0E80] p-7 backdrop-blur-[40px] text-center flex flex-col gap-7 items-center;
+}
+
+.red-box {
+  @apply bg-[linear-gradient(90.31deg,_#520011_24.83%,_#EB224D_125.02%)] p-2 rounded-2xl;
+}
+
+.gray-box {
+  @apply bg-[rgba(228,228,228,1)] rounded-xl mt-5 mb-16;
 }
