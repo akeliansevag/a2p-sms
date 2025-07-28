@@ -77,13 +77,16 @@ const WhyMonty = () => {
               <div
                 key={index}
                 onClick={() => mainSwiperRef.current?.slideToLoop(index)}
-                className={`flex max-lg:flex-col gap-5 items-start cursor-pointer p-4 rounded-lg transition-colors duration-300 ease-in-out ${
+                className={`max-lg:text-center flex max-lg:flex-col gap-5 items-start cursor-pointer p-4 rounded-lg transition-colors duration-300 ease-in-out ${
                   index === activeIndex
                     ? 'bg-[linear-gradient(180deg,_rgba(0,0,0,0.3)_0%,_rgba(156,156,156,0.3)_204.84%)]'
                     : 'hover:bg-[linear-gradient(180deg,_rgba(0,0,0,0.3)_0%,_rgba(156,156,156,0.3)_204.84%)]'
                 }`}
               >
-                <img src={item.icon} alt={item.title} className='red-box' />
+                <div className='red-box max-lg:mx-auto'>
+                  <img src={item.icon} alt={item.title} />
+                </div>
+                
                 <div>
                   <h3 className='text-3xl font-semibold'>{item.title}</h3>
                   <p className='text-white mt-2'>{item.description}</p>

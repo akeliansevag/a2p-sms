@@ -64,9 +64,26 @@ header {
 }
 
 .red-box {
-  @apply bg-[linear-gradient(90.31deg,_#520011_24.83%,_#EB224D_125.02%)] p-2 rounded-2xl;
+  @apply bg-[linear-gradient(90.31deg,_#520011_24.83%,_#EB224D_125.02%)] p-2 rounded-2xl w-[53px] h-[53px] flex items-center justify-center shrink-0;
+}
+
+.red-box-border {
+  @apply bg-[linear-gradient(90.31deg,_#520011_24.83%,_#EB224D_125.02%)] p-2 rounded-2xl border-[2px] border-primary w-[60px] h-[60px] shrink-0 flex items-center justify-center;
 }
 
 .gray-box {
   @apply bg-[rgba(228,228,228,1)] rounded-xl mt-5 mb-16;
+}
+.work-box {
+  @apply border border-gray rounded-2xl bg-[#0E0E0E80] p-7 backdrop-blur-[40px] text-center flex flex-col gap-7 justify-between;
+}
+
+.red-background {
+  @apply pb-10;
+  background: radial-gradient(
+    115.23% 115.23% at 50.18% 84.77%,
+    rgba(235, 34, 77, 0.5) 0%,
+    rgba(51, 51, 51, 0.5) 29.81%,
+    rgba(0, 0, 0, 0.5) 50%
+  );
 }
