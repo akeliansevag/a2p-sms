@@ -64,7 +64,7 @@ header {
 }
 
 .gray-border-box {
-  @apply border border-gray rounded-2xl bg-[#0E0E0E80] p-10 backdrop-blur-[40px] overflow-hidden;
+  @apply border border-gray rounded-2xl bg-[#0E0E0E80] max-lg:p-4 lg:p-10 backdrop-blur-[40px] overflow-hidden;
 }
 
 .red-box {
@@ -107,4 +107,8 @@ header {
 
 select {
   color: #8a8a8a;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }
