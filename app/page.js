@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import HowItWorks from "./components/HowItWorks";
 import KeyFeatures from "./components/KeyFeatures";
 import LogoMarquee from "./components/LogoMarquee";
+import Messaging from "./components/Messaging";
 import UseCases from "./components/UseCases";
 import WhyMonty from "./components/WhyMonty";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <KeyFeatures />
       <HowItWorks />
       <GlobalReach />
+      <Messaging />
    </div>
   );
 }
