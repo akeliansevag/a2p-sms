@@ -152,7 +152,7 @@ const A2PContactForm = () => {
                 name="companyName"
                 value={form.companyName}
                 onChange={handleChange}
-                className="w-full rounded-full px-4 py-2 bg-[#D9D9D9]"
+                className="w-full rounded-full px-4 py-3 bg-[#D9D9D9]"
                 placeholder="Enter your company name"
                 />
                 {errors.companyName && <p className="text-red-500 text-sm ml-2 mt-1">{errors.companyName}</p>}
@@ -166,7 +166,7 @@ const A2PContactForm = () => {
                 name="fullName"
                 value={form.fullName}
                 onChange={handleChange}
-                className="w-full rounded-full px-4 py-2 bg-[#D9D9D9]"
+                className="w-full rounded-full px-4 py-3 bg-[#D9D9D9]"
                 placeholder="Enter your full name"
                 />
                 {errors.fullName && <p className="text-red-500 text-sm ml-2 mt-1">{errors.fullName}</p>}
@@ -180,7 +180,7 @@ const A2PContactForm = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                className="w-full rounded-full px-4 py-2 bg-[#D9D9D9]"
+                className="w-full rounded-full px-4 py-3 bg-[#D9D9D9]"
                 placeholder="Enter your email address"
                 />
                 {errors.email && <p className="text-red-500 text-sm ml-2 mt-1">{errors.email}</p>}
@@ -195,7 +195,7 @@ const A2PContactForm = () => {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    className="w-full rounded-full px-4 py-2 bg-[#D9D9D9]"
+                    className="w-full rounded-full px-4 py-3 bg-[#D9D9D9]"
                     placeholder="Enter your business phone"
                     />
                     {errors.phone && <p className="text-red-500 text-sm ml-2 mt-1">{errors.phone}</p>}
@@ -208,7 +208,7 @@ const A2PContactForm = () => {
                     name="country"
                     value={form.country}
                     onChange={handleChange}
-                    className="w-full rounded-full px-4 py-2 bg-[#D9D9D9]"
+                    className="w-full rounded-full px-4 py-3 bg-[#D9D9D9]"
                     >
                         <option value="">Select your country</option>
                         <option value="AF">Afghanistan</option>
@@ -416,7 +416,7 @@ const A2PContactForm = () => {
                     name="industry"
                     value={form.industry}
                     onChange={handleChange}
-                    className="w-full rounded-full px-4 py-2 bg-[#D9D9D9]"
+                    className="w-full rounded-full px-4 py-3 bg-[#D9D9D9]"
                     >
                         <option value="">Select your industry</option>
                         <option value="a6236539-7ae8-ef11-9342-000d3a216302">Tobacco</option>
@@ -527,7 +527,7 @@ const A2PContactForm = () => {
                     name="product"
                     value={form.product}
                     onChange={handleChange}
-                    className="w-full rounded-full px-4 py-2 bg-[#D9D9D9]"
+                    className="w-full rounded-full px-4 py-3 bg-[#D9D9D9]"
                     >
                         <option value="">Select your product</option>
                         <option value="4916208d-62cf-ec11-a7b5-002248854965">A2P Wholesale</option>
@@ -539,7 +539,7 @@ const A2PContactForm = () => {
 
         
 
-            <button type="submit" className="bg-primary text-white px-6 py-2 w-full mt-7 rounded-full">
+            <button type="submit" className="bg-primary text-white px-6 py-3 w-full mt-7 rounded-full">
                 Contact Us
             </button>
             {submissionMessage && (
