@@ -1,7 +1,7 @@
 // app/components/A2PContactForm.js
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import Script from "next/script";
 
 
@@ -20,7 +20,7 @@ const A2PContactForm = () => {
 
   const [submissionMessage, setSubmissionMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(true);
-
+  const [submitting,setSubmitting] =useState(false);
   const A2P_HMAC_SECRET = "7hg0HxC1xlDBC46b/SJihXzE697RikDmiYb1Uj++dzk=";
 
   const validate = () => {
@@ -70,12 +70,14 @@ const A2PContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (!validate()) return;
-
+    setSubmitting(true);
     const now = Date.now();
     const recentSubmissions = submissionAttempts.filter((ts) => now - ts < 300000);
     if (recentSubmissions.length >= 5) {
-      alert("Too many submissions. Please try again later.");
+      setSubmissionMessage("Too many submissions. Please try again later.");
+      setSubmitting(false);
       return;
     }
 
@@ -95,6 +97,7 @@ const A2PContactForm = () => {
     } catch (error) {
         setSubmissionMessage("Failed to generate reCAPTCHA token.");
         setIsSuccess(false);
+        setSubmitting(false);
         return;
     }
 
@@ -128,11 +131,13 @@ const A2PContactForm = () => {
       .then((data) => {
         setSubmissionMessage("Your message was sent successfully!");
         setIsSuccess(true);
+        setSubmitting(false);
         setSubmissionAttempts([...recentSubmissions, now]);
         setForm({ companyName: "", fullName: "", email: "", phone: "", country: "", industry: "", product: "" });
       })
       .catch(() => {
         setSubmissionMessage("Something went wrong. Please try again later.");
+        setSubmitting(false);
         setIsSuccess(false);
       });
   };
@@ -539,8 +544,8 @@ const A2PContactForm = () => {
 
         
 
-            <button type="submit" className="bg-primary text-white px-6 py-3 w-full mt-7 rounded-full">
-                Contact Us
+            <button type="submit" className="bg-primary text-white px-6 py-3 w-full mt-7 rounded-full cursor-pointer">
+                {submitting ? 'Submitting...' : 'Contact Us'}
             </button>
             {submissionMessage && (
                 <p className={`${isSuccess ? "text-green-600" : "text-red-500"} text-sm text-center`}>

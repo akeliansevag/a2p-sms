@@ -1,4 +1,6 @@
 import Banner from "./components/Banner";
+import FAQs from "./components/FAQs";
+import Footer from "./components/Footer";
 import Glance from "./components/Glance";
 import GlobalReach from "./components/GlobalReach";
 import Header from "./components/Header";
@@ -22,6 +24,8 @@ export default function Home() {
       <HowItWorks />
       <GlobalReach />
       <Messaging />
+      <FAQs />
+      <Footer />
    </div>
   );
 }

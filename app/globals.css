@@ -18,6 +18,10 @@ body {
   @apply text-xl;
 }
 
+a:hover {
+  @apply text-primary;
+}
+
 .menu {
   @apply bg-[rgba(0,0,0,0.6)] backdrop-blur-[50px] p-2 border border-gray rounded-full;
 }
@@ -36,7 +40,7 @@ body {
 }
 
 .a2p-button {
-  @apply flex items-center justify-between gap-4 w-max text-center bg-primary rounded-full px-8 py-2;
+  @apply flex items-center justify-between gap-4 w-max text-center bg-primary rounded-full px-8 py-2 hover:text-white;
 }
 
 .logos-swiper .swiper-wrapper {
