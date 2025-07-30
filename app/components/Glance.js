@@ -7,7 +7,7 @@ const Glance = () => {
             <h2 className='section-title !mb-6'>Monty Mobile at a Glance</h2>
             <p>A global A2P SMS provider powering business-critical communications From security to engagement, Monty helps businesses deliver the right message at the right time, instantly, reliably, and globally.</p>
         </div>
-        <div className='container max-w-[1200px]  mt-12 flex flex-col gap-5'>
+        <div className='container  mt-12 flex flex-col gap-5'>
             <div className='flex max-lg:flex-col gap-5'>
                 <div className='glance-box lg:w-2/3'>
                     <h3>Two-Factor Authentication (2FA)</h3>

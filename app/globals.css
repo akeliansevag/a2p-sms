@@ -72,7 +72,7 @@ header {
 }
 
 .red-box {
-  @apply bg-[linear-gradient(90.31deg,_#520011_24.83%,_#EB224D_125.02%)] p-2 rounded-2xl w-[53px] h-[53px] flex items-center justify-center shrink-0;
+  @apply bg-primary p-2 rounded-2xl w-[53px] h-[53px] flex items-center justify-center shrink-0;
 }
 
 .red-box-border {

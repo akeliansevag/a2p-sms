@@ -25,7 +25,7 @@ const FAQs = () => {
 
   return (
     <section className="max-lg:py-12 lg:py-24">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container">
         <h2 className="section-title text-center mb-10">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqData.map((faq, index) => {
@@ -33,7 +33,7 @@ const FAQs = () => {
             return (
               <div
                 key={index}
-                className="border border-gray rounded-2xl bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(156,156,156,0.4)] px-6 py-4"
+                className="border border-gray rounded-2xl bg-[rgba(0,0,0,0.4)] px-6 py-4"
               >
                 <button
                   onClick={() => toggleFAQ(index)}

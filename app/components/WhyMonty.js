@@ -44,7 +44,7 @@ const WhyMonty = () => {
         <h2 className='section-title !mb-6'>Why Monty for SMS</h2>
       </div>
 
-      <div className='container max-w-[1200px] mt-16'>
+      <div className='container  mt-16'>
         <div className='flex max-lg:flex-col-reverse gap-10'>
 
           {/* Left: Square Image Slider */}
