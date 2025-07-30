@@ -48,7 +48,7 @@ const WhyMonty = () => {
         <div className='flex max-lg:flex-col-reverse gap-10'>
 
           {/* Left: Square Image Slider */}
-          <div className='w-full aspect-square rounded-2xl overflow-hidden'>
+          <div className='lg:w-1/3 aspect-square rounded-2xl overflow-hidden'>
             <Swiper
               modules={[Autoplay, EffectFade]}
               onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
@@ -72,7 +72,7 @@ const WhyMonty = () => {
           </div>
 
           {/* Right: Text Thumbnails */}
-          <div className='w-full flex flex-col gap-6'>
+          <div className='lg:w-2/3 flex flex-col gap-6'>
             {items.map((item, index) => (
               <div
                 key={index}
