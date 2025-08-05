@@ -1,3 +1,4 @@
+import SmoothScrollHandler from "./components/SmoothScrollHandler";
 import "./globals.css";
 
 export const metadata = {
@@ -8,7 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-outfit text-white bg-black max-lg:mt-[var(--mobile-header-height)] lg:mt-[var(--header-height)]">
+      <body id="home" className="font-outfit text-white bg-black max-lg:mt-[var(--mobile-header-height)] lg:mt-[var(--header-height)]">
+        <SmoothScrollHandler />
         <img className="fixed grayscale-100 -z-10 top-0 left-0 w-full h-full object-cover" src="/stars.webp" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -z-10">
           <svg className="max-lg:w-screen max-lg:h-auto" width="1015" height="438" viewBox="0 0 1015 438" fill="none" xmlns="http://www.w3.org/2000/svg">

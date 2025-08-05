@@ -24,7 +24,7 @@ const FAQs = () => {
   };
 
   return (
-    <section className="max-lg:py-12 lg:py-24">
+    <section id="faqs" className="max-lg:py-12 lg:py-24">
       <div className="container">
         <h2 className="section-title text-center mb-10">Frequently Asked Questions</h2>
         <div className="space-y-4">

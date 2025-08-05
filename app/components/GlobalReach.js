@@ -2,7 +2,7 @@ import React from 'react';
 
 const GlobalReach = () => {
   return (
-    <section>
+    <section id="coverage">
       <div className='container text-black'>
         <div className='gray-box lg:items-center flex max-lg:flex-col max-lg:gap-10 lg:gap-24 p-16'>
             <div className='w-full'>

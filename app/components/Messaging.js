@@ -3,7 +3,7 @@ import A2PContactForm from './A2PContactForm';
 
 const Messaging = () => {
   return (
-    <section>
+    <section id="contact-us">
       <div className='container'>
         <div className='gray-border-box flex max-lg:flex-col gap-4'>
             <div className='w-full'>

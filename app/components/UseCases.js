@@ -2,7 +2,7 @@ import React from 'react';
 
 const UseCases = () => {
   return (
-    <section>
+    <section id="use-cases">
       <div className='container text-black '>
         <div className='gray-box lg:items-center flex max-lg:flex-col max-lg:gap-10 lg:gap-24'>
             <div className="lg:w-1/3 p-5 pl-0">

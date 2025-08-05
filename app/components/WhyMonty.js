@@ -39,7 +39,7 @@ const WhyMonty = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className='max-lg:py-12 lg:py-24'>
+    <section id="why-mymonty" className='max-lg:py-12 lg:py-24'>
       <div className='container max-w-[775px] text-center'>
         <h2 className='section-title !mb-6'>Why Monty for SMS</h2>
       </div>

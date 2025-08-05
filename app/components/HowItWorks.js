@@ -20,7 +20,7 @@ const HowItWorks = () => {
 
   ];
   return (
-    <section className='max-lg:py-12 lg:py-24'>
+    <section id="how-it-works" className='max-lg:py-12 lg:py-24'>
       <div className='container'>
         <h2 className='section-title text-center'>How It Works</h2>
         <div className='mt-10 flex justify-between max-lg:flex-col max-lg:gap-10 lg:gap-16'>

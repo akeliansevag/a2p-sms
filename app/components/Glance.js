@@ -2,7 +2,7 @@ import React from 'react';
 
 const Glance = () => {
   return (
-    <section className='max-lg:py-12 lg:py-24'>
+    <section id="a2p-sms" className='max-lg:py-12 lg:py-24'>
         <div className='container max-w-[775px] text-center '>
             <h2 className='section-title !mb-6'>Monty Mobile at a Glance</h2>
             <p>A global A2P SMS provider powering business-critical communications From security to engagement, Monty helps businesses deliver the right message at the right time, instantly, reliably, and globally.</p>

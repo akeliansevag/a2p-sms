@@ -29,7 +29,7 @@ const KeyFeatures = () => {
     }
   ];
   return (
-    <section className='max-lg:py-12 lg:py-24'>
+    <section id="features" className='max-lg:py-12 lg:py-24'>
       <div className='container'>
         <h2 className='section-title text-center'>Key Features</h2>
         <div className='flex flex-wrap justify-center gap-10 lg:gap-24'>
