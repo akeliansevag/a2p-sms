@@ -20,7 +20,7 @@ const Footer = () => {
                     <ul className='flex gap-4 max-lg:flex-col max-lg:text-center'>
                         <li><a href="https://montymobile.com/terms-conditions/" target='_blank'>Terms and Conditions</a></li>
                         <li><a href="https://montymobile.com/privacy-policy/" target='_blank'>Privacy Policy</a></li>
-                        <li><a href="https://montymobile.com/contact-us/" target='_blank'>Contact Us</a></li>
+                        <li><a href="#contact-us" target='_blank'>Contact Us</a></li>
                     </ul>
                 </div>
             </div>
